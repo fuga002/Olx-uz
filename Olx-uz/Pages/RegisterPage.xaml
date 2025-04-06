@@ -4,6 +4,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Olx_uz.Pages.RegisterPage">
     <ContentPage.Content>
-        
+        <VerticalStackLayout>
+            <Label
+                Text = "Yo yo  whatupp ? :)"
+                
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+            /> 
+            
+            <Label
+                Text = ":)"
+                
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+            />
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>
