@@ -4,6 +4,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Olx_uz.Pages.LoginPage">
     <ContentPage.Content>
-        
+        <VerticalStackLayout VerticalOptions="Center" Margin="20,0,20,0" Spacing="20">
+            <Image 
+                Source="dotnet_bot" HorizontalOptions="Center" 
+                HeightRequest="80" WidthRequest="80">
+                
+            </Image>
+            
+            <Label Text="Welcome Back!"
+                   TextColor="#101010"
+                   FontSize="Large"
+                   HorizontalOptions="Center">
+            </Label>
+            
+            <Label Text="Please enter your email below to create using the app"
+                   TextColor="LightSlateGray"
+                   FontSize="Small"
+                   HorizontalOptions="Center"
+            >
+            </Label> 
+            <Entry x:Name="EntEmail" Placeholder="Email"></Entry> 
+            <Entry x:Name="EntPassword" Placeholder="Password" IsPassword="True"></Entry>
+            <Button x:Name="BtnRegister" Text="Sign In" HeightRequest="50" BackgroundColor="#1d94ab" Clicked="BtnLogin_Clicked"></Button>
+            
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Not a member?"
+                       FontSize="Medium"
+                       TextColor="#101010">
+                </Label>
+                <Label Text="Join now"
+                       FontSize="Medium"
+                       TextColor="#1d94ab">
+                </Label>
+                
+                <HorizontalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapJoinNow" Tapped="TapJoinNow_OnTapped"></TapGestureRecognizer>
+                </HorizontalStackLayout.GestureRecognizers>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

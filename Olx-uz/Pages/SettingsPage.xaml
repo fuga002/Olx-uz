@@ -5,5 +5,8 @@
              x:Class="Olx_uz.Pages.SettingsPage">
     <ContentPage.Content>
         
+        <VerticalStackLayout>
+            <Label Text="Yo yo yo yo" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

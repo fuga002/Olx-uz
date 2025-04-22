@@ -1,4 +1,6 @@
-﻿namespace Olx_uz
+﻿using Olx_uz.Pages;
+
+namespace Olx_uz
 {
     public partial class App : Application
     {
@@ -6,7 +8,11 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+           var accessToken =  Preferences.Get("accesstoken",string.Empty);
+           
+           if (string.IsNullOrEmpty(accessToken)) MainPage = new RegisterPage();
+           else MainPage = new CustomTabbedPage();
+           
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Olx_uz.Pages;
 
-public partial class CustomTabbedPage : ContentPage
+public partial class CustomTabbedPage : TabbedPage
 {
     public CustomTabbedPage()
     {

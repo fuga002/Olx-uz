@@ -4,6 +4,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Olx_uz.Pages.BookMarksPage">
     <ContentPage.Content>
-        
+
+        <VerticalStackLayout>
+            <Label Text="Yo yo yo yo" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

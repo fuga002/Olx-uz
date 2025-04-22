@@ -22,6 +22,10 @@ public static class ApiService
         
         var response = await  httpClient.PostAsJsonAsync(AppSettings.BaseUrl + "api/users/register", register);
         
+        string result = await response.Content.ReadAsStringAsync();
+
+        Console.WriteLine("Response: " + result);
+        
         return response.IsSuccessStatusCode;
     }
 

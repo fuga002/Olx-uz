@@ -3,7 +3,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Olx_uz.Pages.HomePage">
-    <ContentPage.Content>
+
+    <Grid Margin="200" RowSpacing="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         
-    </ContentPage.Content>
+        <VerticalStackLayout Grid.Row="0" Spacing="5">
+            <Label x:Name="LblUserName" FontSize="Large" Text="Hi John!"></Label>
+            <Label Text="Find your best place to stay" FontSize="Medium"></Label>
+        </VerticalStackLayout>
+        
+        <Frame Grid.Row="1" Padding="5">
+            <HorizontalStackLayout Spacing="20">
+                <Image Source="search_icon" Aspect="AspectFit" WidthRequest="25"></Image>
+                <Label Text="Search..." VerticalOptions="Center"></Label>
+            </HorizontalStackLayout>
+        </Frame>
+    </Grid>
+    
 </ContentPage>
